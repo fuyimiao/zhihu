@@ -4,18 +4,20 @@ body,html{
 }
 
 #wrap{
-	width: 15.0rem;
+	width: 100%;
+	height: 100%;
 	display: flex;
 	flex-direction: row;
 	position: relative;
 	left: -9.0rem;
 	#sidebar{
 		width: 9.0rem;
-		// height: 100%;
+		height: 100%;
 		color: #94999d;
 		background: #232a30; 
 		display: flex;
 		flex-direction: column;
+		position: relative;
 		// display: none;
 		header{
 			width: 9.0rem;
@@ -70,7 +72,7 @@ body,html{
 			
 		}
 		.nav{
-			height: 19.4rem;
+			// height: 19.4rem;
 			// background: cyan;
 			font-size: 0.6rem;
 			overflow: auto;
@@ -110,6 +112,8 @@ body,html{
 			display: flex;
 			flex-direction: row;
 			font-size: 0.72rem;
+			position: absolute;
+			bottom: 0;
 			span{
 				display: inline-block;
 			}

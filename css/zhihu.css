@@ -3,17 +3,20 @@ body, html {
   height: 100%; }
 
 #wrap {
-  width: 15.0rem;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   position: relative;
   left: -9.0rem; }
   #wrap #sidebar {
     width: 9.0rem;
+    height: 100%;
     color: #94999d;
     background: #232a30;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    position: relative; }
     #wrap #sidebar header {
       width: 9.0rem;
       height: 5.0rem; }
@@ -55,7 +58,6 @@ body, html {
           #wrap #sidebar header .menu div .txt {
             width: 1.2rem; }
     #wrap #sidebar .nav {
-      height: 19.4rem;
       font-size: 0.6rem;
       overflow: auto; }
       #wrap #sidebar .nav li {
@@ -82,7 +84,9 @@ body, html {
       line-height: 2.24rem;
       display: flex;
       flex-direction: row;
-      font-size: 0.72rem; }
+      font-size: 0.72rem;
+      position: absolute;
+      bottom: 0; }
       #wrap #sidebar footer span {
         display: inline-block; }
       #wrap #sidebar footer .reading-mode .icon {

@@ -110,7 +110,7 @@ $(function(){
             jsonp:"cb",
             success:function(data){
                 var list = data.others;
-                console.log(list);
+                // console.log(list);
                 // console.log(sidelist);
                 var sideli =  `<li class="xinli"><a><div class="left">
                         <span class="txt"></span>
