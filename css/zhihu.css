@@ -1,0 +1,133 @@
+body, html {
+  width: 100%;
+  height: 100%; }
+
+#wrap {
+  width: 15.0rem;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: -9.0rem; }
+  #wrap #sidebar {
+    width: 9.0rem;
+    color: #94999d;
+    background: #232a30;
+    display: flex;
+    flex-direction: column; }
+    #wrap #sidebar header {
+      width: 9.0rem;
+      height: 5.0rem; }
+      #wrap #sidebar header .user {
+        width: 9.0rem;
+        height: 1.4rem;
+        display: flex;
+        flex-direction: row;
+        font-size: 0.6rem;
+        line-height: 1.4rem;
+        margin: 0.6rem 0 0.3rem 0; }
+        #wrap #sidebar header .user .head-portrait {
+          width: 1.4rem;
+          height: 1.4rem;
+          border-radius: 50%;
+          margin: 0 0.6rem 0 0.6rem; }
+          #wrap #sidebar header .user .head-portrait img {
+            width: 1.4rem;
+            height: 1.4rem;
+            border-radius: 50%; }
+      #wrap #sidebar header .menu {
+        width: 7.36rem;
+        height: 2rem;
+        padding: 0.2rem 2.04rem 0.2rem 0.6rem;
+        font-size: 0.4rem;
+        display: flex;
+        justify-content: space-between; }
+        #wrap #sidebar header .menu div {
+          width: 1.2rem;
+          text-align: center; }
+          #wrap #sidebar header .menu div span {
+            display: inline-block; }
+          #wrap #sidebar header .menu div .icon {
+            width: 1.2rem;
+            height: 1.2rem; }
+            #wrap #sidebar header .menu div .icon i {
+              font-size: 0.8rem;
+              line-height: 1.2rem; }
+          #wrap #sidebar header .menu div .txt {
+            width: 1.2rem; }
+    #wrap #sidebar .nav {
+      height: 19.4rem;
+      font-size: 0.6rem;
+      overflow: auto; }
+      #wrap #sidebar .nav li {
+        height: 2.0rem; }
+        #wrap #sidebar .nav li a {
+          width: 9.0rem;
+          display: block;
+          height: 2.0rem;
+          display: flex;
+          flex-direction: row;
+          line-height: 2.0rem;
+          color: #94999d; }
+          #wrap #sidebar .nav li a .left {
+            width: 6.2rem;
+            margin-left: 0.76rem; }
+            #wrap #sidebar .nav li a .left i {
+              margin-right: 0.68rem; }
+          #wrap #sidebar .nav li a .right {
+            width: 1.6rem; }
+            #wrap #sidebar .nav li a .right i {
+              font-size: 0.8rem; }
+    #wrap #sidebar footer {
+      height: 2.24rem;
+      line-height: 2.24rem;
+      display: flex;
+      flex-direction: row;
+      font-size: 0.72rem; }
+      #wrap #sidebar footer span {
+        display: inline-block; }
+      #wrap #sidebar footer .reading-mode .icon {
+        margin-right: 0.5rem; }
+      #wrap #sidebar footer .offline {
+        margin: 0 1.88rem 0 0.64rem; }
+        #wrap #sidebar footer .offline .icon {
+          margin-right: 0.5rem; }
+  #wrap #main {
+    width: 15.0rem; }
+    #wrap #main #top {
+      width: 15.0rem;
+      height: 1rem;
+      line-height: 1rem;
+      position: absolute;
+      top: 0.5rem;
+      z-index: 1;
+      color: white;
+      font-size: 0.66rem;
+      text-align: center; }
+      #wrap #main #top .sidebar {
+        position: absolute;
+        top: 0;
+        left: 0.5rem; }
+        #wrap #main #top .sidebar i {
+          font-size: 0.8rem; }
+    #wrap #main .jd_banner {
+      width: 15.0rem;
+      height: 8.64rem;
+      position: relative;
+      overflow: hidden; }
+    #wrap #main .hot-list {
+      width: 15.0rem; }
+      #wrap #main .hot-list li {
+        display: flex;
+        flex-direction: row;
+        padding: 0.6rem;
+        border-bottom: 2px solid #f6f6f6; }
+        #wrap #main .hot-list li .title {
+          width: 10.24rem;
+          height: 2.4rem;
+          margin-right: 28px;
+          font-size: 0.6rem; }
+        #wrap #main .hot-list li .pic {
+          width: 3.0rem;
+          height: 2.4rem; }
+
+/*# sourceMappingURL=zhihu.css.map */

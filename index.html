@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="css/initial.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/zhihu.css">
+	<link rel="stylesheet" href="css/slider.css">
+	<script src = "js/jquery-3.2.1.min.js"></script>
+	<script src = "js/zhihu.js"></script>
+</head>
+	<script>
+		(function(){
+			var html = document.documentElement;
+			var htmlW = html.getBoundingClientRect().width;
+			html.style.fontSize = htmlW / 15 + "px"
+		})();
+	</script>
+<body>
+	<div id="wrap">
+		<div id="sidebar">
+			<header>
+				<div class="user">
+					<div class="head-portrait">
+						<img src="img/Luffy.jpg" alt="head-portrait">
+					</div>
+					<div class="login">请登录</div>
+				</div>
+				<div class="menu">
+					<div class="collection">
+						<span class="icon"><i class="iconfont icon-shoucang"></i></span>
+						<span class="txt">收藏</span>
+					</div>					
+					<div class="news">
+						<span class="icon"><i class="iconfont icon-xiaoxi"></i></span>
+						<span class="txt">消息</span>
+					</div>
+					<div class="settings">
+						<span class="icon"><i class="iconfont icon-shezhi-xue"></i></span>
+						<span class="txt">设置</span>
+					</div>
+				</div>
+			</header>
+			<ul class="nav">
+				<li class="Home">
+					<a href="con2.html">
+						<div class="left">
+							<span class="icon"><i class="iconfont icon-home"></i></span>
+							<span class="txt">首页</span>
+						</div>
+						<div class="right follow "><i class="iconfont icon-001jinruyou"></i></div>
+					</a>						
+				</li>				
+			</ul>
+			<footer>
+				<div class="offline">
+					<span class="icon"><i class="iconfont icon-plus-download"></i></span>
+					<span class="txt">离线</span>
+				</div>
+				<div class="reading-mode">
+					<span class="icon"><i class="iconfont icon-yejianmoshi"></i></span>
+					<span class="txt">白天</span>
+				</div>
+			</footer>		
+		</div>
+		<div id="main">						
+			<div id="top">
+				<div class="sidebar"><i class = "iconfont icon-ego-menu"></i></div>
+				<div class="title">今日热文</div>
+			</div>
+			<div class="jd_banner">
+			    <ul class="clearfix">
+			        <li><a href="#"><img src="img/5.jpg" alt=""><span></span></a></li>
+			        <li><a href="#"><img src="img/1.jpg" alt=""><span class = "mid" ></span></a></li>
+			        <li><a href="#"><img src="img/2.jpg" alt=""><span class = "mid" ></span></a></li>
+			        <li><a href="#"><img src="img/3.jpg" alt=""><span class = "mid" ></span></a></li>
+			        <li><a href="#"><img src="img/4.jpg" alt=""><span class = "mid" ></span></a></li>
+			        <li><a href="#"><img src="img/5.jpg" alt=""><span class = "mid" ></span></a></li>
+			        <li><a href="#"><img src="img/1.jpg" alt=""><span></span></a></li>
+			    </ul>
+			    <ul>
+			        <li class="now"></li>
+			        <li></li>
+			        <li></li>
+			        <li></li>
+			        <li></li>
+			    </ul>
+			</div>
+			<div class="hot-list">
+				<ul></ul>
+			</div>
+			<div class="before"></div>
+		</div>
+	</div>
+</body>
+</html>

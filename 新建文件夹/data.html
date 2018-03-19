@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src = "js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<input type="text" id='ipt'>
+	<button  id = "btn">send</button>
+	<script>
+		$("#btn").click(function(){
+			$.get({
+				url:"zhihu.php",
+				data:{
+					date:$("#ipt").val()
+				},
+				dataType:"jsonp",
+				jsonp:"cb",
+				success:function(data){
+					console.log(data);
+				}
+			})
+			// $.ajax({
+			// 	type:"jsonp",url:"https://zhihu-daily.leanapp.cn/api/v1/last-stories"
+			// }).done(function(res){
+			// 	console.log(res);
+			// })
+		})
+
+	</script>
+</body>
+</html>

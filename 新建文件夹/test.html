@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var ht = `<p><span>666</span></p>`;
+		// console.log(ht);
+		for(var i = 0;i<5;i++){
+			var d = document.createElement("div");
+			d.innerHTML = ht;
+			// console.log(d)
+			document.querySelector('body').append(d);
+		}
+	</script>
+</body>
+</html>

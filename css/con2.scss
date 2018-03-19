@@ -1,0 +1,62 @@
+$titfs:0.68rem;
+$newtit:0.62rem;
+$borcolor:#e5e5e5;
+$headcolor:white;
+.box{
+    width: 100%;
+    
+    .con-head{
+        width: 100%;
+        height:2.56rem;
+        position: relative;
+        .con-filter{
+            width: 100%;
+            height:2.56rem;
+            background-size: 100%!important;
+            background-position: 50% 50%!important;
+            filter: blur(2px);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        p{ 
+            position: absolute;
+            font-size:$titfs ;
+            color: $headcolor;
+            top:1.3rem;
+            left: 6rem;
+            span{
+                display: inline-block;
+                position: absolute;
+                left:0.6rem;
+                top:1.3rem;
+                color: $headcolor;
+            }
+        }
+    }
+    .con-main{
+        .con-art{
+            width:13.8rem;
+            height:3.68rem;
+            position: relative;
+            top:0;
+            left: 0.6rem;
+            font-size:$newtit ;
+            padding-top: 0.6rem;
+            box-sizing: border-box;
+            border-bottom: 2px solid $borcolor;
+            img{
+                width:3rem;
+                height:2.4rem;
+                position: absolute; 
+                right:0;
+                top:0.6rem;
+//              outline: none;
+            }
+            p{
+                font-size: 0.64rem;
+                line-height: 0.8rem;
+            }
+        }
+    }    
+}
