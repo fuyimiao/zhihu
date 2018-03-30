@@ -1,96 +1,23 @@
-window.onload = function(){
-    banner();
-}
-
-var banner = function(){   
-    var banner = document.querySelector(".jd_banner");
-    var width = banner.offsetWidth;
-    var imagebox = banner.querySelector("ul:first-child");
-    var pointbox = banner.querySelector("ul:last-child");
-    var points = pointbox.querySelectorAll('li');
-    var addTransition = function(){
-        imagebox.style.transition = 'all 0.2s';
-        imagebox.style.webkitTransition = "all 0.2s"; 
-    }
-    var removeTransition = function(){
-        imagebox.style.transition = 'none';
-        imagebox.style.webkitTransition = "none";  
-    }
-    var setTranlateX = function(translatex){
-        imagebox.style.transform = "translateX("+translatex+"px)";
-        imagebox.style.webkitTramsform = "translateX("+translatex+"px)";
-    }
-    var index = 1;
-    var timer = setInterval(function(){
-        index ++;
-        addTransition();
-        setTranlateX(-index*width);
-    },3000);
-        imagebox.addEventListener('transitionend',function(){
-        if(index >= 6){
-            index =1;
-            removeTransition();
-            setTranlateX(-index*width);
-        }
-        else if(index<=0){
-            index = 5;
-            removeTransition();
-            setTranlateX(-index*width);
-        }
-        setpoint();
-    })
-    var setpoint = function(){
-        for(var i =0;i<points.length;i++){
-            points[i].classList.remove("now");
-        }
-        points[index-1].classList.add("now")
-    }
-
-    var startX = 0;  
-    var distanceX = 0;   
-    var ismove = false;
-    imagebox.addEventListener("touchstart",function(e){
-        clearInterval(timer);
-        startX = e.touches[0].clientX;
-    });
-     document.body.addEventListener("touchmove",function(e){
-            // console.log(e)
-            var moveX =  e.touches[0].clientX;
-            // console.log(moveX)
-            distanceX = moveX - startX;
-            var translateX = -index*width +distanceX;
-            removeTransition();
-            setTranlateX(translateX);
-            ismove = true;
-        });
-
-    imagebox.addEventListener("touchend",function(e){
-        if(ismove){
-            if(Math.abs(distanceX)<width/3){
-                addTransition();
-                setTranlateX(-index*width);
-            }else{
-                if(distanceX>0){
-                    index--;
-                }else{
-                    index++;
-                }
-                addTransition();
-                setTranlateX(-index*width);
-            }
-        }
-        clearInterval(timer);
-        timer = setInterval(function(){
-            index ++;
-            addTransition();
-            setTranlateX(-index*width);
-        },2000);
-        startX = 0;
-        distanceX = 0;
-        ismove = false;
-    });
-
-}
+ var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical',
+    loop: true,
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })        
 
 $(function(){
     $(".sidebar").click(function(){
@@ -98,7 +25,6 @@ $(function(){
             console.log($("#wrap").position().left)
             $("#wrap").css("left","-9.0rem")
         }
-        // console.log($("#wrap").position().left);
         else{
             $("#wrap").css("left","0")
             // console.log($("#wrap").position().left)

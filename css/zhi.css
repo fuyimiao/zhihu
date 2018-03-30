@@ -71,7 +71,6 @@ body, html {
   width: 1.2rem;
 }
 #wrap #sidebar ul {
-  height: 9.9rem;
   font-size: 0.6rem;
   overflow: hidden;
 }
@@ -143,8 +142,11 @@ body, html {
 #wrap #main #top .sidebar i {
   font-size: 0.8rem;
 }
-#wrap #main .swiper-wrapper {
+#wrap #main .jd_banner {
+  width: 100%;
   height: 8.64rem;
+  position: relative;
+  overflow: hidden;
 }
 #wrap #main .hot-list {
   width: 15.0rem;
@@ -166,4 +168,4 @@ body, html {
   height: 2.4rem;
 }
 
-/*# sourceMappingURL=zhihu.css.map */
+/*# sourceMappingURL=zhi.css.map */
