@@ -1,4 +1,7 @@
- var mySwiper = new Swiper ('.swiper-container', {
+
+$(function(){
+ 
+  var mySwiper = new Swiper ('.swiper-container', {
     direction: 'vertical',
     loop: true,
     
@@ -19,7 +22,6 @@
     },
   })        
 
-$(function(){
     $(".sidebar").click(function(){
         if($("#wrap").position().left == 0){
             console.log($("#wrap").position().left)
